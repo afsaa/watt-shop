@@ -14,7 +14,7 @@ public class Cliente {
 
     private String apellidos;
 
-    private Double celular;
+    private Long celular;
 
     private String direccion;
 
@@ -47,11 +47,11 @@ public class Cliente {
         this.apellidos = apellidos;
     }
 
-    public Double getCelular() {
+    public Long getCelular() {
         return celular;
     }
 
-    public void setCelular(Double celular) {
+    public void setCelular(Long celular) {
         this.celular = celular;
     }
 
@@ -69,5 +69,13 @@ public class Cliente {
 
     public void setCorreo_electronico(String correo_electronico) {
         this.correo_electronico = correo_electronico;
+    }
+
+    public List<Compra> getCompras() {
+        return compras;
+    }
+
+    public void setCompras(List<Compra> compras) {
+        this.compras = compras;
     }
 }
